@@ -192,7 +192,7 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " Python folding
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
-set nofoldenable
+"set nofoldenable
 
 
 " Settings for NERDTree
@@ -206,5 +206,5 @@ let NERDTreeIgnore = ['\.pyc$']
 " cd ~/.vim/
 " git clone git://github.com/SirVer/ultisnips.git bundle/ultisnips
 " git clone git://github.com/honza/vim-snippets.git bundle/vim-snippets 
-autocmd FileType python set ft=python.django " For UltiSnips
-autocmd FileType html set ft=htmldjango " For UltiSnips
+"autocmd FileType python set ft=python.django " For UltiSnips
+"autocmd FileType html set ft=htmldjango " For UltiSnips
