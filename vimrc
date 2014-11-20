@@ -1,10 +1,5 @@
-" Sample .vimrc file by Martin Brochhaus
-" Presented at PyCon APAC 2012
-
-
-" ============================================
-" Note to myself:
-" DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
+" vimrc from Neosilver-GK
+"
 " ============================================
 " Setup Pathogen to manage your plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -39,10 +34,10 @@ let mapleader = ","
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
-
+"noremap <C-n> :nohl<CR>
+"vnoremap <C-n> :nohl<CR>
+"inoremap <C-n> :nohl<CR>
+" commentet out, cos NERDtree use <C-n>
 
 " Quicksave command
 "" noremap <C-Z> :update<CR>
@@ -142,6 +137,10 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+
+" Change help to 'tab help' to
+" open help in new tab instead of horizontal split
+ca help tab help
 
 " ============================================================================
 " Python IDE Setup
