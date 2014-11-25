@@ -10,3 +10,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-log-syntax"]
+	path = vim/bundle/vim-log-syntax
+	url = https://github.com/neosilver-gk/vim-log-syntax
