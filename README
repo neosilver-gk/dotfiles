@@ -29,3 +29,16 @@ git submodules update
 So that's it.
 
 Have fun and an easy work with you settins.
+
+
+Settings for Windows:
+
+If you install vim in Windows (you need Python3/2), you have to add also softlinks
+in the user folder. In Windows it's a bit different.
+
+You can add it in powershell ( but as admin!) by typing:
+
+cmd /c mklink .\_vimrc .\dotfiles\vimrc
+cmd /c mklink /d .\vimfiles .\dotfiles\vim
+
+This should do it.

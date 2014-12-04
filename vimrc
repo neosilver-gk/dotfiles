@@ -86,6 +86,8 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 set t_Co=256
 color wombat256mod
 
+set guifont=Courier_New:h9:cDEFAULT
+
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
