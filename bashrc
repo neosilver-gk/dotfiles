@@ -20,6 +20,7 @@ shopt -s nocaseglob
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
+export EDITOR=vim
 
 #functions
 source ~/.bash_function
