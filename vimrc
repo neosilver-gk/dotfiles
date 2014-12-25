@@ -83,10 +83,10 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-set t_Co=256
-color wombat256mod
+"set t_Co=256
+"color wombat256mod
 
-set guifont=Courier_New:h9:cDEFAULT
+"set guifont=Courier_New:h9:cDEFAULT
 
 
 " Enable syntax highlighting
@@ -147,6 +147,15 @@ ca help tab help
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
+
+
+" Settings for solaris-color-sheme
+" cd ~/.vim/bundle
+" git submodule add https://github.com/altercation/vim-colors-solarized.git
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
 
 
 " Settings for vim-powerline
