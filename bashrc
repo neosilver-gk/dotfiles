@@ -148,6 +148,9 @@ fi
 if [ -f ~/.bash_function ]; then
     . ~/.bash_function
 fi
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
