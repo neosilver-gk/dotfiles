@@ -10,35 +10,14 @@ you can also rename the direktory at cloning ex.:
 git clone https://github.com/neosilver-gk/dotfiles.git .files
 
 
-after that, you have to delete your .vimrc, .bashrc and .vim and create links to
-the new one.
+after that, you have to delete your .emacs.d directory and .emacs file.
 
-rm -r .vimrc .bashrc .vim
+rm -r .emacs.d .emacs
 
-ln -s dotfiles/vimrc .vimrc
-ln -s dotfiles/bashrc .bashrc
-ln -s dotfiles/vim .vim
+than your just add a link to the directory from the dotfiles
 
-The last part is to get all submodules. Go to into dotfiles and load all submodules.
-
-cd ~/dotfiles
-
-git submodules init
-git submodules update
+ln -s dotfiles/emacs.d .emacs.d
 
 So that's it.
 
 Have fun and an easy work with you settins.
-
-
-Settings for Windows:
-
-If you install vim in Windows (you need Python3/2), you have to add also softlinks
-in the user folder. In Windows it's a bit different.
-
-You can add it in powershell ( but as admin!) by typing:
-
-cmd /c mklink .\_vimrc .\dotfiles\vimrc
-cmd /c mklink /d .\vimfiles .\dotfiles\vim
-
-This should do it.
