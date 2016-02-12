@@ -13,6 +13,7 @@
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(company-auto-complete t)
+ '(company-auto-complete-chars (quote (41 46)))
  '(company-quickhelp-mode t)
  '(custom-enabled-themes (quote (solarized-dark)))
  '(custom-safe-themes
