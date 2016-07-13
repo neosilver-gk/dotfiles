@@ -1,5 +1,19 @@
 (require 'package)
 (package-initialize)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(setq web-mode-engines-alist '(("django"    . "\\.html\'")))
+
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+
+(setq web-mode-enable-auto-pairing t)
+(setq web-mode-enable-auto-expanding t)
+(setq web-mode-enable-css-colorization t)
+
 (elpy-enable)
 ;; Fixing a key binding bug in elpy
 (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
@@ -34,4 +48,4 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:height 90)))))
 (add-hook 'after-init-hook 'global-company-mode)
-(add-to-list 'company-backends 'company-web-html)
+;;(add-to-list 'company-backends 'company-web-html)
