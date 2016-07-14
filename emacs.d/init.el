@@ -27,6 +27,8 @@
   (define-key map (kbd "<tab>") 'company-complete-common-or-cycle)
   )
 
+(load-theme 'monokai t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -36,10 +38,6 @@
  '(company-auto-complete t)
  '(company-auto-complete-chars (quote (41 46)))
  '(company-quickhelp-mode t)
- '(custom-enabled-themes (quote (solarized-dark)))
- '(custom-safe-themes
-   (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(default-frame-alist (quote ((width . 90) (height . 30))))
  '(global-linum-mode t)
  '(package-archives
