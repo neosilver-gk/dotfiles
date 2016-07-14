@@ -20,6 +20,13 @@
 ;; Fixing another key binding bug in iedit mode
 (define-key global-map (kbd "C-c o") 'iedit-mode)
 
+(let ((map company-active-map))
+  (define-key map (kbd "RET") nil)
+  (define-key map (kbd "<return>") nil)
+  (define-key map (kbd "M-RET") #'company-complete-selection)
+  (define-key map (kbd "<tab>") 'company-complete-common-or-cycle)
+  )
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,7 +40,7 @@
  '(custom-safe-themes
    (quote
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(default-frame-alist (quote ((width . 90) (height . 33))))
+ '(default-frame-alist (quote ((width . 90) (height . 30))))
  '(global-linum-mode t)
  '(package-archives
    (quote
@@ -46,6 +53,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 90)))))
+ '(default ((t (:height 95)))))
 (add-hook 'after-init-hook 'global-company-mode)
 ;;(add-to-list 'company-backends 'company-web-html)
